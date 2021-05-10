@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            padding-top: 50px;
+            color:white;
+            font-size: 200px;
+         }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body onload="time()">
+    <script>
+        setInterval(time,500)
+        function time(){
+            var t=new Date()
+            document.getElementById("here").innerHTML=t.getHours()+" : "+t.getMinutes()+" : "+t.getSeconds()
+            
+        }
+    </script>
+    <h1 id="here"></h1>
+    
+</body>
+
+</html>
